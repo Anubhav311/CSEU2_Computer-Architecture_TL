@@ -39,6 +39,14 @@ class CPU:
         """
         return self.ram[memory_address]
 
+    def ram_write(self, memory_data, memory_address):
+        """
+        Writes memory_data to index memory_address of
+        the ram
+        """
+        # write memory_data to index memory_address of ram
+        self.ram[memory_address] = memory_data
+
     def alu(self, op, reg_a, reg_b):
         """ALU operations."""
 
