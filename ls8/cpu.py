@@ -32,6 +32,12 @@ class CPU:
             self.ram[address] = instruction
             address += 1
 
+    def ram_read(self, memory_address):
+        """
+        Returns the value stored at memory_address index
+        of the ram
+        """
+        return self.ram[memory_address]
 
     def alu(self, op, reg_a, reg_b):
         """ALU operations."""
